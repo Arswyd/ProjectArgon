@@ -13,15 +13,21 @@ public class PlayerControls : MonoBehaviour
     // [SerializeField] InputAction fire;
     // Bind movement in the inspector for 2D Vector (WASD) or Add Binding -> Path -> Listen -> move Gamepad Stick for recognition
 
-    [SerializeField] float controlSpeed = 30f;
-    [SerializeField] float xRange = 10f;    
-    [SerializeField] float yRange = 7f;
-    [SerializeField] GameObject[] lasers;
+    [Header("General")]
+    [Tooltip("Player control speed")][SerializeField] float controlSpeed = 30f;
+    [Tooltip("Player movement range in x axis")] [SerializeField] float xRange = 12f;
+    [Tooltip("Player movement range in y axis")] [SerializeField] float yRange = 10f;
 
+    [Header("Laser array")]
+    [Tooltip("Add player lasers here")] [SerializeField] GameObject[] lasers;
+
+    [Header("Position based tuning")]
     [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -15f;
     [SerializeField] float yawFactor = 2f;
-    [SerializeField] float rollFactor = -10f;
+
+    [Header("Control based tuning")]
+    [SerializeField] float controlPitchFactor = -15f;
+    [SerializeField] float rollFactor = -15f;
 
     float xThrow;
     float yThrow;
