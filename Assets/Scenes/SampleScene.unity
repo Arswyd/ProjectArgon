@@ -292,6 +292,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &913967497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3349715946825654287, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6045367311729082158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1078934935
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +487,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -14.521001, z: 0}
+--- !u!1 &1809458755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 116165507980558999, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 6045367311729082158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6045367311729082158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -488,6 +500,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1055326232659033835, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
+        type: 3}
+      propertyPath: lasers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055326232659033835, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
+        type: 3}
+      propertyPath: lasers.Array.data[0]
+      value: 
+      objectReference: {fileID: 913967497}
+    - target: {fileID: 1055326232659033835, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
+        type: 3}
+      propertyPath: lasers.Array.data[1]
+      value: 
+      objectReference: {fileID: 1809458755}
     - target: {fileID: 2980468862139135040, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
         type: 3}
       propertyPath: lengthInSec
@@ -531,7 +558,7 @@ PrefabInstance:
     - target: {fileID: 4822396250296386682, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6045367311512638408, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
         type: 3}
@@ -596,7 +623,7 @@ PrefabInstance:
     - target: {fileID: 7857849895410149090, guid: 687edab1b0e400a4c9d6a336aa3b57d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 687edab1b0e400a4c9d6a336aa3b57d3, type: 3}

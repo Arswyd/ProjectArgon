@@ -10,11 +10,13 @@ public class PlayerControls : MonoBehaviour
     // 2, Project Settings -> Player -> Active Input Handling -> Both for legacy code
     // 3, using UnityEngine.InputSystem;
     // [SerializeField] InputAction movement;
+    // [SerializeField] InputAction fire;
     // Bind movement in the inspector for 2D Vector (WASD) or Add Binding -> Path -> Listen -> move Gamepad Stick for recognition
 
     [SerializeField] float controlSpeed = 30f;
     [SerializeField] float xRange = 10f;    
     [SerializeField] float yRange = 7f;
+    [SerializeField] GameObject[] lasers;
 
     [SerializeField] float positionPitchFactor = -2f;
     [SerializeField] float controlPitchFactor = -15f;
@@ -34,20 +36,23 @@ public class PlayerControls : MonoBehaviour
     //void OnEnable()
     //{
         // movement.Enable();
+        // fire.Enable();
     //}
 
     //void OnEnable()
     //{
         // movement.Disable();
+        // fire.Disable();
     //}
 
     void Update()
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
     }
 
-    private void ProcessTranslation()
+    void ProcessTranslation()
     {
         xThrow = Input.GetAxis("Horizontal");
         yThrow = Input.GetAxis("Vertical");
@@ -67,7 +72,7 @@ public class PlayerControls : MonoBehaviour
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
 
-    private void ProcessRotation()
+    void ProcessRotation()
     {
         float pitchDueToPosition = transform.localPosition.y * positionPitchFactor;
         float pitchDueToControlThrow = yThrow * controlPitchFactor;
@@ -77,5 +82,32 @@ public class PlayerControls : MonoBehaviour
         float roll = xThrow * rollFactor;
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void ProcessFiring()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            ToggleLasers(true);
+        }
+        else
+        {
+            ToggleLasers(false);
+        }
+
+        // *** NEW INPUT SYSTEM EXAMPLE ***
+        //if (fire.ReadValue<float>() > 0.5)
+        //{
+        //    Debug.Log("Fire");
+        //}
+    }
+
+    void ToggleLasers(bool isLaserActive)
+    {
+        foreach (GameObject laser in lasers)
+        {
+            var emissionModule = laser.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isLaserActive;
+        }
     }
 }
