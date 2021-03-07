@@ -159,7 +159,7 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   parent: {fileID: 156976601}
   scorePerHit: 15
-  enemyHitPoints: 3
+  enemyHitPoints: 6
 --- !u!65 &28688052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   parent: {fileID: 156976601}
   scorePerHit: 15
-  enemyHitPoints: 3
+  enemyHitPoints: 6
 --- !u!1 &1553610497
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   parent: {fileID: 156976601}
   scorePerHit: 15
-  enemyHitPoints: 3
+  enemyHitPoints: 6
 --- !u!65 &1553610499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -753,7 +753,7 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   parent: {fileID: 156976601}
   scorePerHit: 15
-  enemyHitPoints: 3
+  enemyHitPoints: 6
 --- !u!65 &2013244348
 BoxCollider:
   m_ObjectHideFlags: 0
