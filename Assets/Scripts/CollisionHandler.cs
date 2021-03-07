@@ -18,15 +18,13 @@ public class CollisionHandler : MonoBehaviour
     {
         crashVFX.Play();
         GetComponent<MeshRenderer>().enabled = false;
-        // TODO - Fix collision disabling
-        GetComponent<Collider>().enabled = false;
+        GetComponent<BoxCollider>().enabled = false;
         GetComponent<PlayerControls>().enabled = false;
         Invoke("ReloadScene", loadDelay);
     }
 
     void ReloadScene()
     {
-        // TODO - Fix reloadning level
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }

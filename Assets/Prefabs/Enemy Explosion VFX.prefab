@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 1368849347490601514}
   - component: {fileID: 3746286720376377529}
   - component: {fileID: 7815898562278036762}
+  - component: {fileID: -2376300103447866978}
   m_Layer: 0
-  m_Name: Explosion VFX
+  m_Name: Enemy Explosion VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2579220240010126860}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.7653713, y: -0.8117571, z: 0.8505287}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -225,13 +226,13 @@ ParticleSystem:
       maxColor: {r: 0.06674972, g: 0.0753742, b: 0.18867922, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.047621958, g: 0.01619794, b: 0.26415092, a: 1}
+        key0: {r: 0.9622642, g: 0.009523248, b: 0, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0.16629584, g: 0.8333535, b: 0.9528302, a: 0}
+        key2: {r: 0.9529412, g: 0.63111985, b: 0.1647059, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 1, g: 1, b: 1, a: 0}
-        key5: {r: 0.16470589, g: 0.8352942, b: 0.95294124, a: 0}
-        key6: {r: 0.04705883, g: 0.015686275, b: 0.2627451, a: 0}
+        key5: {r: 0.95294124, g: 0.6313726, b: 0.16470589, a: 0}
+        key6: {r: 0.9607844, g: 0.007843138, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 10794
         ctime1: 16769
@@ -4710,7 +4711,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: c229fc68e03d28b438b664033e737de6, type: 2}
-  - {fileID: 2100000, guid: 2ee365f7bb02bd34e92396f1b3507d28, type: 2}
+  - {fileID: 2100000, guid: fbcfad10bb4613349934dca759ebbd90, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4754,3 +4755,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &-2376300103447866978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2579220240010126860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 655fc85cb893f7b4e9ca6742bcaff91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
