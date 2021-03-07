@@ -157,6 +157,7 @@ MonoBehaviour:
   deathVFX: {fileID: 2579220240010126860, guid: a12b0ee4046deda40a8527b0b61859a9,
     type: 3}
   parent: {fileID: 156976601}
+  enemyScore: 15
 --- !u!65 &28688052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -260,6 +261,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &274380567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 274380569}
+  - component: {fileID: 274380568}
+  m_Layer: 0
+  m_Name: Score Board
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &274380568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274380567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d76a3f77c92064cb536050b970ff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &274380569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274380567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &321301735 stripped
 Animator:
@@ -636,6 +680,7 @@ MonoBehaviour:
   deathVFX: {fileID: 2579220240010126860, guid: a12b0ee4046deda40a8527b0b61859a9,
     type: 3}
   parent: {fileID: 156976601}
+  enemyScore: 15
 --- !u!1 &1553610497
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,6 +716,7 @@ MonoBehaviour:
   deathVFX: {fileID: 2579220240010126860, guid: a12b0ee4046deda40a8527b0b61859a9,
     type: 3}
   parent: {fileID: 156976601}
+  enemyScore: 15
 --- !u!65 &1553610499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -786,6 +832,7 @@ MonoBehaviour:
   deathVFX: {fileID: 2579220240010126860, guid: a12b0ee4046deda40a8527b0b61859a9,
     type: 3}
   parent: {fileID: 156976601}
+  enemyScore: 15
 --- !u!65 &2013244348
 BoxCollider:
   m_ObjectHideFlags: 0
