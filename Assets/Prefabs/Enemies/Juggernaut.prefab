@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 6371241992710272374}
   - component: {fileID: 6361899513598142684}
   - component: {fileID: 5032331140048149613}
+  - component: {fileID: 7378365026175795990}
   m_Layer: 0
   m_Name: Juggernaut
   m_TagString: Untagged
@@ -141,6 +142,19 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   scorePerHit: 5
   enemyHitPoints: 30
+--- !u!65 &7378365026175795990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6347961356530742504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.60827, y: 1.7607899, z: 12.307949}
+  m_Center: {x: 0, y: -0.00001564622, z: 0}
 --- !u!1 &6348060840074911688
 GameObject:
   m_ObjectHideFlags: 0

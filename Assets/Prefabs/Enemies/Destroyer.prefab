@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 8719610153811946215}
   - component: {fileID: 8730057587567512329}
   - component: {fileID: 7495376023745241880}
+  - component: {fileID: -3997199373549866530}
   m_Layer: 0
   m_Name: Destroyer
   m_TagString: Untagged
@@ -185,6 +186,19 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   scorePerHit: 10
   enemyHitPoints: 10
+--- !u!65 &-3997199373549866530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8750716694480755573}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.945585, y: 1.4957151, z: 13.117715}
+  m_Center: {x: 0, y: -0.000007659197, z: 0}
 --- !u!1 &8750891550181377409
 GameObject:
   m_ObjectHideFlags: 0

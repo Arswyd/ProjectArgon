@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 5109326090402468772}
   - component: {fileID: 5099050732010522078}
   - component: {fileID: 906146881975921621}
+  - component: {fileID: 343486502486147242}
   m_Layer: 0
   m_Name: Shadow
   m_TagString: Untagged
@@ -397,3 +398,16 @@ MonoBehaviour:
   hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
   scorePerHit: 20
   enemyHitPoints: 6
+--- !u!65 &343486502486147242
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5086814231457673736}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.589765, y: 1.8212523, z: 10.850527}
+  m_Center: {x: 0, y: -0.000008016825, z: 0}
