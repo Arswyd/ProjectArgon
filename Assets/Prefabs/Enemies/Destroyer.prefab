@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DeathFX: {fileID: 2579220240010126860, guid: a12b0ee4046deda40a8527b0b61859a9, type: 3}
-  hitVFX: {fileID: 2579220240010126860, guid: 484fc99eb3b1728458758752a8a31f23, type: 3}
-  scorePerHit: 30
+  hitVFX: {fileID: 2579220240010126860, guid: 0f948994530f9134ca912f2ea44147ea, type: 3}
+  scorePerHit: 5000
   enemyHitPoints: 50
 --- !u!65 &-3997199373549866530
 BoxCollider:

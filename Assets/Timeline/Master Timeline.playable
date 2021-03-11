@@ -3432,7 +3432,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: Slackbar
   - m_Version: 1
-    m_Start: 14.55
+    m_Start: 17
     m_ClipIn: 0
     m_Asset: {fileID: 3640481900340304235}
     m_Duration: 2.950000000000001
@@ -3838,7 +3838,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: VO_Incoming Sector 5
   - m_Version: 1
-    m_Start: 14.55
+    m_Start: 17
     m_ClipIn: 0
     m_Asset: {fileID: -3732071334143554960}
     m_Duration: 2.950000000000001
