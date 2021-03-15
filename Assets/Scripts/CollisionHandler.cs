@@ -9,6 +9,14 @@ public class CollisionHandler : MonoBehaviour
 
     [SerializeField] ParticleSystem crashVFX;
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadScene();
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         StartCrashSequence();
